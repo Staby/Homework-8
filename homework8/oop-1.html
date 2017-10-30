@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.031">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOP</title>
+</head>
+<body>
+  <script>
+      //1. Написати клас Robot, який містить два метода
+
+  function Robot(name) {
+      this.name = name;
+      this.say = function() {
+        console.log("Hello, I am " + this.name);
+      }
+      this.go = function() {
+      	console.log(this.name + " is going")
+      }
+  
+  
+    }
+  
+    var android = new Robot('Android');
+    android.say();
+    android.go();
+  </script>
+  <script src="oop-1.js"></script>
+  <script src="this-task.js"></script>
+
+</body>
+</html>
